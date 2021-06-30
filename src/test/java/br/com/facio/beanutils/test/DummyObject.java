@@ -1,4 +1,4 @@
-package br.com.facio.beanutils;
+package br.com.facio.beanutils.test;
 
 /**
  *

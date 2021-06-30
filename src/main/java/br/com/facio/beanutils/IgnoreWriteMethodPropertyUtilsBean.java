@@ -25,7 +25,7 @@ public class IgnoreWriteMethodPropertyUtilsBean  extends PropertyUtilsBean {
         if (pd != null 
                 && pd.getWriteMethod() != null 
                 && methodsToIgnore.contains(pd.getWriteMethod().toString())) {
-            System.out.println("IGNORED: " + pd.getWriteMethod());
+
             //ignore method, skip copy of this property
             return null;
         }

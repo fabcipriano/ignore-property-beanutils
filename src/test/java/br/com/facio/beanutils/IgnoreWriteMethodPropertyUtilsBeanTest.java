@@ -5,6 +5,7 @@
  */
 package br.com.facio.beanutils;
 
+import br.com.facio.beanutils.test.DummyObject;
 import java.util.Collections;
 import java.util.Set;
 import org.apache.commons.beanutils.BeanUtilsBean;
@@ -35,7 +36,7 @@ public class IgnoreWriteMethodPropertyUtilsBeanTest {
         assertNull(dest.getValue()); 
         assertNull(dest.getHello()); 
         BeanUtilsBean.getInstance().getConvertUtils().register( false, true, 0 );
-        Set<String> ignore = Collections.singleton("public void br.com.facio.beanutils.DummyObject.setValue(java.lang.String)" );
+        Set<String> ignore = Collections.singleton("public void br.com.facio.beanutils.test.DummyObject.setValue(java.lang.String)" );
         BeanUtilsBean b = 
                 new BeanUtilsBean(BeanUtilsBean.getInstance().getConvertUtils(), 
                 new IgnoreWriteMethodPropertyUtilsBean( ignore ));
