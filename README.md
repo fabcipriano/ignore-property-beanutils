@@ -1,0 +1,1 @@
+# ignore-property-beanutils
